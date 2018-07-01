@@ -11,22 +11,27 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "rule")
 @Data
+@Table(name = "rule")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Rule {
     @Id
     @GeneratedValue
     private Integer id;
+
     @Column(nullable = false)
     private String name;
+
     @Column(nullable = false)
     private String src;
+
     @Column(nullable = false)
     private String dst;
+
     @Column(nullable = false)
     private String url;
+
     @Column(nullable = false)
     private Integer deviceId;
 }

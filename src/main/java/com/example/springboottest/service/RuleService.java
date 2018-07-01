@@ -22,11 +22,11 @@ public class RuleService {
     public List<Rule> findAll(){
         return ruleRepository.findAll();
     }
-    /*
-    public Rule findOne(Integer id){
-        return ruleRepository.findOne(id);
+
+    public Rule findById(Integer id){
+        return ruleRepository.findById(id).get();
     }
-    */
+
     public Rule create(Rule rule){
         return ruleRepository.save(rule);
     }
