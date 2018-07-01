@@ -33,9 +33,8 @@ public class RuleService {
     public Rule update(Rule rule){
         return ruleRepository.save(rule);
     }
-    /*
+
     public void delete(Integer id){
-        ruleRepository.delete(id);
+        ruleRepository.deleteById(id);
     }
-    */
 }
